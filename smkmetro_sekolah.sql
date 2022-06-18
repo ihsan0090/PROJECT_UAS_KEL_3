@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Jun 2022 pada 12.38
+-- Waktu pembuatan: 18 Jun 2022 pada 12.38
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -75,7 +75,8 @@ INSERT INTO `tbl_album` (`album_id`, `album_nama`, `album_tanggal`, `album_pengg
 (8, 'Guru', '2021-07-03 09:02:57', 1, 'Tata', 2, '4523782c7a81faf562f65a90a7b21013.jpg'),
 (9, 'OSIS', '2021-07-03 09:03:43', 1, 'Tata', 9, '8c91dce9ae7666cd1fe1d208bdf2871e.jpeg'),
 (10, 'LDKS', '2021-07-03 09:03:58', 1, 'Tata', 5, '6b5be1cfb0ab1e4aec31fd6248232e1d.jpeg'),
-(11, 'giat baksos', '2022-06-15 07:35:41', 1, 'Tata', 2, '75c30a06d0bf09aa91cada5d7c2bd6ff.JPG');
+(11, 'giat baksos', '2022-06-15 07:35:41', 1, 'Tata', 2, '75c30a06d0bf09aa91cada5d7c2bd6ff.JPG'),
+(12, 'jualan', '2022-06-17 17:34:52', 7, 'RENI', 0, '72044e45c6f198e9ce21ed10fff5ddc9.png');
 
 -- --------------------------------------------------------
 
@@ -180,23 +181,17 @@ CREATE TABLE `tbl_guru` (
   `guru_jenkel` varchar(2) DEFAULT NULL,
   `guru_tmp_lahir` varchar(80) DEFAULT NULL,
   `guru_tgl_lahir` varchar(80) DEFAULT NULL,
-  `guru_mapel` varchar(120) DEFAULT NULL,
   `guru_photo` varchar(40) DEFAULT NULL,
-  `guru_tgl_input` timestamp NULL DEFAULT current_timestamp()
+  `guru_tgl_input` timestamp NULL DEFAULT current_timestamp(),
+  `guru_mapel` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tbl_guru`
 --
 
-INSERT INTO `tbl_guru` (`guru_id`, `guru_nip`, `guru_nama`, `guru_jenkel`, `guru_tmp_lahir`, `guru_tgl_lahir`, `guru_mapel`, `guru_photo`, `guru_tgl_input`) VALUES
-(3, '-', 'Joko Subroto', 'L', 'Jakarta', '25 September 1989', 'PPKN, Matematika', NULL, '2017-01-26 13:41:20'),
-(4, '-', 'Kusta Otomo', 'L', 'Jakarta', '25 September 1989', 'Seni Budaya', NULL, '2017-01-26 13:42:08'),
-(5, '-', 'Yuliani Ningsih', 'P', 'Padang', '27 September 1993', 'Bahasa Indonesia', NULL, '2017-01-26 13:42:48'),
-(6, '927482658274993', 'Ari Hidayat', 'L', 'Padang', '25 September 1993', 'Bahasa Inggris', NULL, '2017-01-26 13:43:46'),
-(7, '927482658274998', 'Irma Cantika', 'P', 'Padang', '25 September 1993', 'Bahasa Inggris, IPA', '4200d2514abf45755943526b74474c16.jpg', '2017-01-26 13:45:11'),
-(8, '-', 'Ririn Febriesta', 'P', 'Padang', '27 September 1994', 'Pend. Agama Islam', NULL, '2017-01-27 04:28:23'),
-(9, '21551216', 'wkwkw', 'L', 'jakaarta', '25 juni 1990', 'MTK', '75f62e8bc34955c649eb2ed8f93d618c.jpg', '2022-06-15 07:39:54');
+INSERT INTO `tbl_guru` (`guru_id`, `guru_nip`, `guru_nama`, `guru_jenkel`, `guru_tmp_lahir`, `guru_tgl_lahir`, `guru_photo`, `guru_tgl_input`, `guru_mapel`) VALUES
+(9, '21551216', 'wkwkw', 'L', 'jakaarta', '25 juni 1990', '75f62e8bc34955c649eb2ed8f93d618c.jpg', '2022-06-15 07:39:54', 'MTK');
 
 -- --------------------------------------------------------
 
@@ -220,7 +215,8 @@ CREATE TABLE `tbl_inbox` (
 
 INSERT INTO `tbl_inbox` (`inbox_id`, `inbox_nama`, `inbox_email`, `inbox_kontak`, `inbox_pesan`, `inbox_tanggal`, `inbox_status`) VALUES
 (9, 'ADASD', 'ADAD@SDADAD', '2323123', 'WRDFSDFSF', '2022-06-15 07:40:56', 0),
-(10, 'ASDAD', 'RERER@DDFD', 'SADSDA', 'WEADAD', '2022-06-15 07:41:27', 0);
+(10, 'ASDAD', 'RERER@DDFD', 'SADSDA', 'WEADAD', '2022-06-15 07:41:27', 0),
+(11, 'IHSAN NUR RAHMAN', 'haaseeggaw4@gmail.com', '089698130294', 'fsdfs', '2022-06-17 18:00:20', 0);
 
 -- --------------------------------------------------------
 
@@ -332,10 +328,6 @@ CREATE TABLE `tbl_pengguna` (
   `pengguna_tentang` text DEFAULT NULL,
   `pengguna_email` varchar(50) DEFAULT NULL,
   `pengguna_nohp` varchar(20) DEFAULT NULL,
-  `pengguna_facebook` varchar(35) DEFAULT NULL,
-  `pengguna_twitter` varchar(35) DEFAULT NULL,
-  `pengguna_linkdin` varchar(35) DEFAULT NULL,
-  `pengguna_google_plus` varchar(35) DEFAULT NULL,
   `pengguna_status` int(2) DEFAULT 1,
   `pengguna_level` varchar(3) DEFAULT NULL,
   `pengguna_register` timestamp NULL DEFAULT current_timestamp(),
@@ -346,9 +338,10 @@ CREATE TABLE `tbl_pengguna` (
 -- Dumping data untuk tabel `tbl_pengguna`
 --
 
-INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_moto`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_tentang`, `pengguna_email`, `pengguna_nohp`, `pengguna_facebook`, `pengguna_twitter`, `pengguna_linkdin`, `pengguna_google_plus`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
-(5, 'IHSAN', NULL, 'L', 'loking9090', '10ab53307e7cfe54f7494cbf56e7b9d7', NULL, 'ihsannurrahman1241@gmail.com', '087715642215', NULL, NULL, NULL, NULL, 1, '1', '2022-06-15 07:47:43', '7f8f5d202a569577c196ff99b4d83c2e.jpg'),
-(6, 'YANTI', NULL, 'P', 'yanti222', '21254f704091d62ac7b4d36c510966f3', NULL, 'yantisuryani@gmail.com', '085611254463', NULL, NULL, NULL, NULL, 1, '1', '2022-06-15 07:48:53', '2f56db00bbbd344b423b58fa098b0219.jpg');
+INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_moto`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_tentang`, `pengguna_email`, `pengguna_nohp`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
+(5, 'IHSAN', NULL, 'L', 'loking9090', '10ab53307e7cfe54f7494cbf56e7b9d7', NULL, 'ihsannurrahman1241@gmail.com', '087715642215', 1, '1', '2022-06-15 07:47:43', '7f8f5d202a569577c196ff99b4d83c2e.jpg'),
+(6, 'YANTI', NULL, 'P', 'yanti222', '21254f704091d62ac7b4d36c510966f3', NULL, 'yantisuryani@gmail.com', '085611254463', 1, '1', '2022-06-15 07:48:53', '2f56db00bbbd344b423b58fa098b0219.jpg'),
+(8, 'RENI', NULL, 'L', 'mantuku22', '5557ebe93ee8c76ddeccdf7fc3ae6564', NULL, 'mantuku222@gmail.com', '0896665421654', 1, '1', '2022-06-18 10:31:36', 'df48054bfc898da02cf3d5124ce55026.png');
 
 -- --------------------------------------------------------
 
@@ -371,7 +364,8 @@ CREATE TABLE `tbl_pengumuman` (
 INSERT INTO `tbl_pengumuman` (`pengumuman_id`, `pengumuman_judul`, `pengumuman_deskripsi`, `pengumuman_tanggal`, `pengumuman_author`) VALUES
 (1, 'Pengumuman Libur Semester Ganjil Tahun Ajaran 2016-2017', 'Libur semester ganjil tahun ajaran 2016-2017 dimulai dari tanggal 3 Maret 2017 sampai dengan tanggal 7 Maret 207.', '2017-01-21 01:17:30', 'Tata'),
 (2, 'Pengumuman Pembagian Raport Semester Ganjil Tahun Ajaran 2016-2017', 'Menjelang berakhirnya proses belajar-mengajar di semester ganjil tahun ajaran 2016-2017, maka akan diadakan pembagian hasil belajar/raport pada tanggal 4 Maret 2017 pukul 07.30 WIB.\r\nYang bertempat di M-Sekolah. Raport diambil oleh orang tua/wali kelas murid masing-masing', '2017-01-21 01:16:20', 'Tata'),
-(3, 'Pengumuman Peresmian dan Launching Website Perdana M-Sekolah', 'Peresmian dan launching website resmi M-Sekolah akan diadakan pada hari 23 Desember 2016 pukul 10.00, bertepatan dengan pembagian raport semester ganjil tahun ajaran 2016-2017', '2017-01-22 07:16:16', 'Tata');
+(3, 'Pengumuman Peresmian dan Launching Website Perdana M-Sekolah', 'Peresmian dan launching website resmi M-Sekolah akan diadakan pada hari 23 Desember 2016 pukul 10.00, bertepatan dengan pembagian raport semester ganjil tahun ajaran 2016-2017', '2017-01-22 07:16:16', 'Tata'),
+(6, 'Baru Hari Pertama Operasi Patuh Jaya, 2 Ribu Orang Kena Tilang', 'asdasdasdasda', '2022-06-17 17:30:31', 'RENI');
 
 -- --------------------------------------------------------
 
@@ -459,7 +453,9 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (995, '2021-07-06 02:52:14', '180.252.117.247', 'Chrome'),
 (996, '2021-07-06 02:53:42', '162.62.123.46', 'Other'),
 (997, '2021-07-06 03:30:40', '101.128.127.16', 'Firefox'),
-(998, '2022-06-15 07:17:21', '::1', 'Chrome');
+(998, '2022-06-15 07:17:21', '::1', 'Chrome'),
+(999, '2022-06-17 14:21:15', '::1', 'Chrome'),
+(1000, '2022-06-17 17:30:05', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -534,7 +530,7 @@ CREATE TABLE `tbl_tulisan` (
 INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisan_tanggal`, `tulisan_kategori_id`, `tulisan_kategori_nama`, `tulisan_views`, `tulisan_gambar`, `tulisan_pengguna_id`, `tulisan_author`, `tulisan_img_slider`, `tulisan_slug`) VALUES
 (20, 'Persiapan siswa menjelang ujian nasional', '<p>Banyak metode bejalar yang dilakukan oleh siswa untuk persiapan menghadapi ujian nasional (UN). Biantaranya mengingat dengan metode Mind Map, ataupun bejalar diluar kelas (outdoor).&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:24:42', 1, 'Pendidikan', 29, '0a927c6d34dc5560b72f053313f14638.jpg', 1, 'Tata', 0, 'persiapan-siswa-menjelang-ujian-nasional'),
 (22, 'Prestasi membangga dari siswa MSchool', '<p>Prestasi dan penghargaan merupakan trigger (pemicu) semangat belajar siswa. Ada banyak prestasi yang telah diraih oleh siswa m-sekolah. Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:38:21', 6, 'Prestasi', 1, 'a59aa487ab2e3b57b2fcf75063b67575.jpg', 1, 'Tata', 0, 'prestasi-membangga-dari-siswa-mschool'),
-(23, 'Pelaksanaan Ujian Nasional MSchool', '<p>Pelaksanaan UN (Ujian Nasional) di sekolah M-Sekolah berlangsung tentram dan damai. Terlihat ketenangan terpancar diwajah siswa berprestasi.&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:41:30', 1, 'Pendidikan', 3, '12bfb1953df800c59835a2796f8c6619.jpg', 1, 'Tata', 0, 'pelaksanaan-ujian-nasional-mschool');
+(23, 'Pelaksanaan Ujian Nasional MSchool', '<p>Pelaksanaan UN (Ujian Nasional) di sekolah M-Sekolah berlangsung tentram dan damai. Terlihat ketenangan terpancar diwajah siswa berprestasi.&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:41:30', 1, 'Pendidikan', 5, '12bfb1953df800c59835a2796f8c6619.jpg', 1, 'Tata', 0, 'pelaksanaan-ujian-nasional-mschool');
 
 --
 -- Indexes for dumped tables
@@ -657,7 +653,7 @@ ALTER TABLE `tbl_agenda`
 -- AUTO_INCREMENT untuk tabel `tbl_album`
 --
 ALTER TABLE `tbl_album`
-  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_files`
@@ -675,13 +671,13 @@ ALTER TABLE `tbl_galeri`
 -- AUTO_INCREMENT untuk tabel `tbl_guru`
 --
 ALTER TABLE `tbl_guru`
-  MODIFY `guru_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `guru_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_inbox`
 --
 ALTER TABLE `tbl_inbox`
-  MODIFY `inbox_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `inbox_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_kategori`
@@ -711,19 +707,19 @@ ALTER TABLE `tbl_log_aktivitas`
 -- AUTO_INCREMENT untuk tabel `tbl_pengguna`
 --
 ALTER TABLE `tbl_pengguna`
-  MODIFY `pengguna_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `pengguna_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_pengumuman`
 --
 ALTER TABLE `tbl_pengumuman`
-  MODIFY `pengumuman_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pengumuman_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_pengunjung`
 --
 ALTER TABLE `tbl_pengunjung`
-  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=999;
+  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_siswa`
@@ -741,7 +737,7 @@ ALTER TABLE `tbl_testimoni`
 -- AUTO_INCREMENT untuk tabel `tbl_tulisan`
 --
 ALTER TABLE `tbl_tulisan`
-  MODIFY `tulisan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `tulisan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
