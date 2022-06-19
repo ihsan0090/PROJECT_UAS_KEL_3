@@ -491,20 +491,6 @@ INSERT INTO `tbl_siswa` (`siswa_id`, `siswa_nis`, `siswa_nama`, `siswa_jenkel`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_testimoni`
---
-
-CREATE TABLE `tbl_testimoni` (
-  `testimoni_id` int(11) NOT NULL,
-  `testimoni_nama` varchar(30) DEFAULT NULL,
-  `testimoni_isi` varchar(120) DEFAULT NULL,
-  `testimoni_email` varchar(35) DEFAULT NULL,
-  `testimoni_tanggal` timestamp NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Struktur dari tabel `tbl_tulisan`
 --
 
@@ -625,11 +611,6 @@ ALTER TABLE `tbl_pengunjung`
 ALTER TABLE `tbl_siswa`
   ADD PRIMARY KEY (`siswa_id`);
 
---
--- Indeks untuk tabel `tbl_testimoni`
---
-ALTER TABLE `tbl_testimoni`
-  ADD PRIMARY KEY (`testimoni_id`);
 
 --
 -- Indeks untuk tabel `tbl_tulisan`
@@ -726,12 +707,6 @@ ALTER TABLE `tbl_pengunjung`
 --
 ALTER TABLE `tbl_siswa`
   MODIFY `siswa_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
---
--- AUTO_INCREMENT untuk tabel `tbl_testimoni`
---
-ALTER TABLE `tbl_testimoni`
-  MODIFY `testimoni_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_tulisan`
