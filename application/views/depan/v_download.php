@@ -185,7 +185,7 @@
                     <div class="col-md-3">
                         <div class="address">
                             <h3>Hubungi Kami</h3>
-                            <p><span>Alamat: </span> Jl. Raya Siliwangi Km. 10 Gg. Melati Rt. 03/ Rw.07 Bekasi, Jawa Barat, INA. 17151</p>
+                            <p><span>Alamat: </span> Jl. Raya Sudirman Kav.55 Jakarta Selatan</p>
                             <p>Email : info@smkmetro.sch.id
                                 <br> Phone : +628510 025 7920</p>
                                
