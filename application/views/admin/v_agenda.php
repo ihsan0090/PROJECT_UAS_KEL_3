@@ -200,6 +200,7 @@
                     <th>Tanggal</th>
                     <th>Tempat</th>
                     <th>Waktu</th>
+                    <th>Keterangan</th>
                     <th>Author</th>
                     <th style="text-align:right;">Aksi</th>
                 </tr>
@@ -227,6 +228,7 @@
                   <td><?php echo $agenda_mulai.' s/d '.$agenda_selesai;?></td>
                   <td><?php echo $agenda_tempat;?></td>
                   <td><?php echo $agenda_waktu;?></td>
+                  <td><?php echo $agenda_keterangan;?></td>
                   <td><?php echo $agenda_author;?></td>
                   <td style="text-align:right;">
                         <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $agenda_id;?>"><span class="fa fa-pencil"></span></a>
