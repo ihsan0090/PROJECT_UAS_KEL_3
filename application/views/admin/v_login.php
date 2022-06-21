@@ -25,7 +25,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg"> <img width="320px;" src="<?php echo base_url().'assets/images/logo-dark.png'?>"></p><hr/>
+    <p class="login-box-msg"> <img width="150px;" src="<?php echo base_url().'assets/images/logo-up.png'?>"></p><hr/>
 
     <form action="<?php echo site_url().'admin/login/auth'?>" method="post">
       <div class="form-group has-feedback">
