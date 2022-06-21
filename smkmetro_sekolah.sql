@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Jun 2022 pada 12.38
+-- Waktu pembuatan: 21 Jun 2022 pada 15.31
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -321,11 +321,9 @@ CREATE TABLE `tbl_log_aktivitas` (
 CREATE TABLE `tbl_pengguna` (
   `pengguna_id` int(11) NOT NULL,
   `pengguna_nama` varchar(50) DEFAULT NULL,
-  `pengguna_moto` varchar(100) DEFAULT NULL,
   `pengguna_jenkel` varchar(2) DEFAULT NULL,
   `pengguna_username` varchar(30) DEFAULT NULL,
   `pengguna_password` varchar(35) DEFAULT NULL,
-  `pengguna_tentang` text DEFAULT NULL,
   `pengguna_email` varchar(50) DEFAULT NULL,
   `pengguna_nohp` varchar(20) DEFAULT NULL,
   `pengguna_status` int(2) DEFAULT 1,
@@ -338,10 +336,9 @@ CREATE TABLE `tbl_pengguna` (
 -- Dumping data untuk tabel `tbl_pengguna`
 --
 
-INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_moto`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_tentang`, `pengguna_email`, `pengguna_nohp`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
-(5, 'IHSAN', NULL, 'L', 'loking9090', '10ab53307e7cfe54f7494cbf56e7b9d7', NULL, 'ihsannurrahman1241@gmail.com', '087715642215', 1, '1', '2022-06-15 07:47:43', '7f8f5d202a569577c196ff99b4d83c2e.jpg'),
-(6, 'YANTI', NULL, 'P', 'yanti222', '21254f704091d62ac7b4d36c510966f3', NULL, 'yantisuryani@gmail.com', '085611254463', 1, '1', '2022-06-15 07:48:53', '2f56db00bbbd344b423b58fa098b0219.jpg'),
-(8, 'RENI', NULL, 'L', 'mantuku22', '5557ebe93ee8c76ddeccdf7fc3ae6564', NULL, 'mantuku222@gmail.com', '0896665421654', 1, '1', '2022-06-18 10:31:36', 'df48054bfc898da02cf3d5124ce55026.png');
+INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_email`, `pengguna_nohp`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
+(5, 'IHSAN', 'L', 'loking9090', '10ab53307e7cfe54f7494cbf56e7b9d7', 'ihsannurrahman1241@gmail.com', '087715642215', 1, '1', '2022-06-15 07:47:43', '7f8f5d202a569577c196ff99b4d83c2e.jpg'),
+(6, 'YANTI', 'P', 'yanti222', '21254f704091d62ac7b4d36c510966f3', 'yantisuryani@gmail.com', '085611254463', 1, '1', '2022-06-15 07:48:53', '2f56db00bbbd344b423b58fa098b0219.jpg');
 
 -- --------------------------------------------------------
 
@@ -455,7 +452,9 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (997, '2021-07-06 03:30:40', '101.128.127.16', 'Firefox'),
 (998, '2022-06-15 07:17:21', '::1', 'Chrome'),
 (999, '2022-06-17 14:21:15', '::1', 'Chrome'),
-(1000, '2022-06-17 17:30:05', '::1', 'Chrome');
+(1000, '2022-06-17 17:30:05', '::1', 'Chrome'),
+(1001, '2022-06-20 02:17:53', '::1', 'Chrome'),
+(1002, '2022-06-21 03:02:13', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -611,7 +610,6 @@ ALTER TABLE `tbl_pengunjung`
 ALTER TABLE `tbl_siswa`
   ADD PRIMARY KEY (`siswa_id`);
 
-
 --
 -- Indeks untuk tabel `tbl_tulisan`
 --
@@ -700,7 +698,7 @@ ALTER TABLE `tbl_pengumuman`
 -- AUTO_INCREMENT untuk tabel `tbl_pengunjung`
 --
 ALTER TABLE `tbl_pengunjung`
-  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
+  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1003;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_siswa`
