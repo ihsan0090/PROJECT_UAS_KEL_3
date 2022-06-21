@@ -140,10 +140,10 @@
                 <div class="blog-tiltle_block">
 
                     <div class="blog-icons">
-                        <div class="blog-share_block">
+                        <!--div class="blog-share_block">
                           <div class="pull-left"><h5>Bagikan Ke:</h5></div>
                           <div class="sharePopup"></div>
-                        </div>
+                        </div-->
                     </div>
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs blogpost-tab-wrap" role="tablist">
@@ -346,22 +346,6 @@
         <!-- Script JS -->
         <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
         <script src="<?php echo base_url().'theme/js/jssocials.js'?>"></script>
-        <script>
-          $(document).ready(function(){
-            $(".sharePopup").jsSocials({
-                  showCount: true,
-            			showLabel: true,
-            			shareIn: "popup",
-            			shares: [
-            			{ share: "twitter", label: "Twitter" },
-            			{ share: "facebook", label: "Facebook" },
-            			{ share: "googleplus", label: "Google+" },
-            			{ share: "linkedin", label: "Linked In" },
-                  { share: "pinterest", label: "Pinterest" }
-            			]
-                });
-          });
-        </script>
     </body>
 
     </html>
