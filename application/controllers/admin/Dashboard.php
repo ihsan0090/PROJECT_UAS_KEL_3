@@ -13,7 +13,7 @@ class Dashboard extends CI_Controller{
 			$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
 			$this->load->view('admin/v_dashboard',$x);
 		}else{
-			redirect('admin/v_dashboard');
+			$this->load->view('admin/v_dashboard');
 		}
 	
 	}
