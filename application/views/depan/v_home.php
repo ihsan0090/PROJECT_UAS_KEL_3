@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>M School - Selamat Datang di M School</title>
+    <title>SMK METRO - SELAMAT DATANG DI SITUS PORTAL SEKOLAH SMK METRO</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
@@ -116,7 +116,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block" src="<?php echo base_url().'assets/images/slider.jpg'?>" alt="First slide" height="565px">
+                    <img class="d-block" src="<?php echo base_url().'assets/images/slider.jpg'?>" alt="First slide" height="690px">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
                             <h1>Inovasi Terdepan &amp; Kreativitas Utama</h1>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide" height="690px">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
                             <h1>Pendidik yang Berpengalaman</h1>
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide" height="690px">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
                             <h1>Proses Belajar Interaktif</h1>
