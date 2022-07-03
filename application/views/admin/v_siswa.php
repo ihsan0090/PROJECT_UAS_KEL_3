@@ -194,6 +194,7 @@
                 <tr>
           					<th>Photo</th>
           					<th>NIS</th>
+                    <th>Pass</th>
           					<th>Nama</th>
           					<th>Jenis Kelamin</th>
                     <th>Kelas</th>
@@ -207,6 +208,7 @@
           					   $no++;
           					   $id=$i['siswa_id'];
           					   $nis=$i['siswa_nis'];
+                       $pass=$i['siswa_password'];
           					   $nama=$i['siswa_nama'];
           					   $jenkel=$i['siswa_jenkel'];
           					   $kelas_id=$i['siswa_kelas_id'];
@@ -221,6 +223,7 @@
                   <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/'.$photo;?>"></td>
                   <?php endif;?>
                   <td><?php echo $nis;?></td>
+                  <td><?php echo $pass;?></td>
         				  <td><?php echo $nama;?></td>
                   <?php if($jenkel=='L'):?>
                   <td>Laki-Laki</td>
@@ -470,6 +473,13 @@
                                     </div>
 
                                     <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Pass</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xpass" class="form-control" id="inputUserName" placeholder="Pass" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xnama" class="form-control" id="inputUserName" placeholder="Nama" required>
@@ -529,6 +539,7 @@
   <?php foreach ($data->result_array() as $i) :
               $id=$i['siswa_id'];
               $nis=$i['siswa_nis'];
+              $pass=$i['siswa_password'];
               $nama=$i['siswa_nama'];
               $jenkel=$i['siswa_jenkel'];
               $kelas_id=$i['siswa_kelas_id'];
@@ -540,16 +551,23 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Edit Guru</h4>
+                        <h4 class="modal-title" id="myModalLabel">Edit Siswa</h4>
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/siswa/update_siswa'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
                                 <input type="hidden" name="kode" value="<?php echo $id;?>"/>
                                 <input type="hidden" value="<?php echo $photo;?>" name="gambar">
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">NIP</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">NIS</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xnis" value="<?php echo $nis;?>" class="form-control" id="inputUserName" placeholder="NIP" required>
+                                            <input type="text" name="xnis" value="<?php echo $nis;?>" class="form-control" id="inputUserName" placeholder="NIS" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Pass</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xpass" class="form-control" id="inputUserName" placeholder="Pass" required>
                                         </div>
                                     </div>
 
@@ -628,6 +646,7 @@
 	<?php foreach ($data->result_array() as $i) :
               $id=$i['siswa_id'];
               $nis=$i['siswa_nis'];
+              $pass=$i['siswa_password'];
               $nama=$i['siswa_nama'];
               $jenkel=$i['siswa_jenkel'];
               $kelas_id=$i['siswa_kelas_id'];
@@ -657,9 +676,6 @@
             </div>
         </div>
 	<?php endforeach;?>
-
-
-
 
 <!-- jQuery 2.2.3 -->
 <script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
@@ -692,18 +708,6 @@
   });
 </script>
 <?php if($this->session->flashdata('msg')=='error'):?>
-        <script type="text/javascript">
-                $.toast({
-                    heading: 'Error',
-                    text: "Password dan Ulangi Password yang Anda masukan tidak sama.",
-                    showHideTransition: 'slide',
-                    icon: 'error',
-                    hideAfter: false,
-                    position: 'bottom-right',
-                    bgColor: '#FF4859'
-                });
-        </script>
-
     <?php elseif($this->session->flashdata('msg')=='success'):?>
         <script type="text/javascript">
                 $.toast({

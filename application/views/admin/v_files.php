@@ -135,8 +135,6 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
-            <li><a href="#"><i class="fa fa-star-o"></i> Prestasi Siswa</a></li>
-
           </ul>
         </li>
 

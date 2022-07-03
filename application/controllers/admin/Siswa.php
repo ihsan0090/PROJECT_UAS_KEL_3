@@ -45,10 +45,11 @@ class Siswa extends CI_Controller{
 	                        $photo=$gbr['file_name'];
 							$nis=strip_tags($this->input->post('xnis'));
 							$nama=strip_tags($this->input->post('xnama'));
+							$pass=strip_tags($this->input->post('xpass'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$kelas=strip_tags($this->input->post('xkelas'));
 
-							$this->m_siswa->simpan_siswa($nis,$nama,$jenkel,$kelas,$photo);
+							$this->m_siswa->simpan_siswa($nis,$nama,$pass,$jenkel,$kelas,$photo);
 							echo $this->session->set_flashdata('msg','success');
 							redirect('admin/siswa');
 					}else{
@@ -59,10 +60,11 @@ class Siswa extends CI_Controller{
 	            }else{
 	            	$nis=strip_tags($this->input->post('xnis'));
 					$nama=strip_tags($this->input->post('xnama'));
+					$pass=strip_tags($this->input->post('xpass'));
 					$jenkel=strip_tags($this->input->post('xjenkel'));
 					$kelas=strip_tags($this->input->post('xkelas'));
 
-					$this->m_siswa->simpan_siswa_tanpa_img($nis,$nama,$jenkel,$kelas);
+					$this->m_siswa->simpan_siswa_tanpa_img($nis,$nama,$pass,$jenkel,$kelas);
 					echo $this->session->set_flashdata('msg','success');
 					redirect('admin/siswa');
 				}
@@ -100,10 +102,11 @@ class Siswa extends CI_Controller{
 	                        $kode=$this->input->post('kode');
 							$nis=strip_tags($this->input->post('xnis'));
 							$nama=strip_tags($this->input->post('xnama'));
+							$pass=strip_tags($this->input->post('xpass'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$kelas=strip_tags($this->input->post('xkelas'));
 
-							$this->m_siswa->update_siswa($kode,$nis,$nama,$jenkel,$kelas,$photo);
+							$this->m_siswa->update_siswa($kode,$nis,$nama,$pass,$jenkel,$kelas,$photo);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/siswa');
 	                    
@@ -116,10 +119,11 @@ class Siswa extends CI_Controller{
 							$kode=$this->input->post('kode');
 							$nis=strip_tags($this->input->post('xnis'));
 							$nama=strip_tags($this->input->post('xnama'));
+							$pass=strip_tags($this->input->post('xpass'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$kelas=strip_tags($this->input->post('xkelas'));
 
-							$this->m_siswa->update_siswa_tanpa_img($kode,$nis,$nama,$jenkel,$kelas);
+							$this->m_siswa->update_siswa_tanpa_img($kode,$nis,$nama,$pass,$jenkel,$kelas);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/siswa');
 	            } 
@@ -135,5 +139,4 @@ class Siswa extends CI_Controller{
 		echo $this->session->set_flashdata('msg','success-hapus');
 		redirect('admin/siswa');
 	}
-
 }

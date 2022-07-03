@@ -174,22 +174,6 @@ class Pengguna extends CI_Controller{
 		$this->m_pengguna->hapus_pengguna($kode);
 	    echo $this->session->set_flashdata('msg','success-hapus');
 	    redirect('admin/pengguna');
-	}
-
-	function reset_password(){
-   
-        $id=$this->uri->segment(4);
-        $get=$this->m_pengguna->getusername($id);
-        if($get->num_rows()>0){
-            $a=$get->row_array();
-            $b=$a['pengguna_username'];
-        }
-        $pass=rand(123456,999999);
-        $this->m_pengguna->resetpass($id,$pass);
-        echo $this->session->set_flashdata('msg','show-modal');
-        echo $this->session->set_flashdata('uname',$b);
-        echo $this->session->set_flashdata('upass',$pass);
-	    redirect('admin/pengguna');
    
     }
 

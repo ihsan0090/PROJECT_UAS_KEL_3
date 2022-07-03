@@ -40,14 +40,6 @@ class M_pengguna extends CI_Model{
 		$hsl=$this->db->query("DELETE FROM tbl_pengguna where pengguna_id='$kode'");
 		return $hsl;
 	}
-	function getusername($id){
-		$hsl=$this->db->query("SELECT * FROM tbl_pengguna where pengguna_id='$id'");
-		return $hsl;
-	}
-	function resetpass($id,$pass){
-		$hsl=$this->db->query("UPDATE tbl_pengguna set pengguna_password=md5('$pass') where pengguna_id='$id'");
-		return $hsl;
-	}
 
 	function get_pengguna_login($kode){
 		$hsl=$this->db->query("SELECT * FROM tbl_pengguna where pengguna_id='$kode'");

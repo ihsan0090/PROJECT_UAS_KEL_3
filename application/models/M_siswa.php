@@ -6,21 +6,21 @@ class M_siswa extends CI_Model{
 		return $hsl;
 	}
 
-	function simpan_siswa($nis,$nama,$jenkel,$kelas,$photo){
-		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_jenkel,siswa_kelas_id,siswa_photo) VALUES ('$nis','$nama','$jenkel','$kelas','$photo')");
+	function simpan_siswa($nis,$nama,$pass,$jenkel,$kelas,$photo){
+		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_password,siswa_jenkel,siswa_kelas_id,siswa_photo) VALUES ('$nis','$nama','$pass','$jenkel','$kelas','$photo')");
 		return $hsl;
 	}
-	function simpan_siswa_tanpa_img($nis,$nama,$jenkel,$kelas){
-		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_jenkel,siswa_kelas_id) VALUES ('$nis','$nama','$jenkel','$kelas')");
+	function simpan_siswa_tanpa_img($nis,$nama,$pass,$jenkel,$kelas){
+		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_password,siswa_jenkel,siswa_kelas_id) VALUES ('$nis','$nama','$pass','$jenkel','$kelas')");
 		return $hsl;
 	}
 
-	function update_siswa($kode,$nis,$nama,$jenkel,$kelas,$photo){
-		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_jenkel='$jenkel',siswa_kelas_id='$kelas',siswa_photo='$photo' WHERE siswa_id='$kode'");
+	function update_siswa($kode,$nis,$nama,$pass,$jenkel,$kelas,$photo){
+		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_password='$pass',siswa_jenkel='$jenkel',siswa_kelas_id='$kelas',siswa_photo='$photo' WHERE siswa_id='$kode'");
 		return $hsl;
 	}
-	function update_siswa_tanpa_img($kode,$nis,$nama,$jenkel,$kelas){
-		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_jenkel='$jenkel',siswa_kelas_id='$kelas' WHERE siswa_id='$kode'");
+	function update_siswa_tanpa_img($kode,$nis,$nama,$pass,$jenkel,$kelas){
+		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_password='$pass',siswa_jenkel='$jenkel',siswa_kelas_id='$kelas' WHERE siswa_id='$kode'");
 		return $hsl;
 	}
 	function hapus_siswa($kode){

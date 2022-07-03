@@ -227,11 +227,10 @@
                   <?php if($pengguna_level=='1'):?>
                         <td>Administrator</td>
                   <?php else:?>
-                        <td>Author</td>
+                        <!--td>Author</td-->
                   <?php endif;?>
                   <td style="text-align:right;">
                         <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $pengguna_id;?>"><span class="fa fa-pencil"></span></a>
-                        <a class="btn" href="<?php echo base_url().'admin/pengguna/reset_password/'.$pengguna_id;?>"><span class="fa fa-refresh"></span></a>
                         <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $pengguna_id;?>"><span class="fa fa-trash"></span></a>
                   </td>
                 </tr>
@@ -518,7 +517,7 @@
                                         <div class="col-sm-7">
                                             <select class="form-control" name="xlevel" required>
                                                 <option value="1">Administrator</option>
-                                                <option value="2">Author</option>
+                                                <!--option value="2">Author</option-->
                                             </select>
                                         </div>
                                     </div>
@@ -691,40 +690,6 @@
             </div>
         </div>
 	<?php endforeach;?>
-
-	<!--Modal Reset Password-->
-        <div class="modal fade" id="ModalResetPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Reset Password</h4>
-                    </div>
-
-                    <div class="modal-body">
-
-                            <table>
-                                <tr>
-                                    <th style="width:120px;">Username</th>
-                                    <th>:</th>
-                                    <th><?php echo $this->session->flashdata('uname');?></th>
-                                </tr>
-                                <tr>
-                                    <th style="width:120px;">Password Baru</th>
-                                    <th>:</th>
-                                    <th><?php echo $this->session->flashdata('upass');?></th>
-                                </tr>
-                            </table>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
 
 <!-- jQuery 2.2.3 -->
 <script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
