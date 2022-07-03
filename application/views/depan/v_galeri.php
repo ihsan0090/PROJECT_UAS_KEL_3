@@ -89,9 +89,6 @@
                                   <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('download');?>">Download</a>
-                              </li>
-                              <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
                               </li>
                               <li class="nav-item">
@@ -168,7 +165,6 @@
                           <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
                           <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
                           <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
                       </ul>
                   </div>
                 </div>
