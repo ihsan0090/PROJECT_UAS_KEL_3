@@ -86,9 +86,6 @@
                                     <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('download');?>">Download</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
                                 </li>
                                 <li class="nav-item">
@@ -216,6 +213,15 @@
                     </div>
                     <div class="chart-text">
                         <p><span class="counter"><?php echo $tot_siswa;?></span> Siswa
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
+                    <div class="chart-img">
+                        <img src="<?php echo base_url().'theme/images/chart-icon_3.png'?>" class="img-fluid" alt="chart_icon">
+                    </div>
+                    <div class="chart-text">
+                        <p><span class="counter"><?php echo $tot_pengumuman;?></span> Pengumuman
                         </p>
                     </div>
                 </div>
