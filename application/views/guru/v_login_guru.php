@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SMK METRO | Log in</title>
+  <title>SMK METRO | Guru</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
@@ -26,10 +26,10 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg"> <img width="150px;" src="<?php echo base_url().'assets/images/logo-up.png'?>"></p><hr/>
-    <p class="login-box-msg">LOGIN SISWA</p><hr/>
-    <form action="<?php echo site_url().'admin/masuk_siswa/auth'?>" method="post">
+    <p class="login-box-msg">LOGIN GURU</p><hr/>
+    <form action="<?php echo site_url().'admin/masuk_guru/auth'?>" method="post">
       <div class="form-group has-feedback">
-        <input type="text" name="nis" class="form-control" placeholder="Nis" required>
+        <input type="text" name="nip" class="form-control" placeholder="Nip" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">

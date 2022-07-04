@@ -102,7 +102,7 @@
           </a>
         </li-->
         <li>
-          <a href="<?php echo base_url().'hal_siswa/materi'?>">
+          <a href="<?php echo base_url().'hal_guru/materi'?>">
             <i class="fa fa-download"></i> <span>Materi</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
@@ -118,8 +118,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'hal_siswa/tugas'?>"><i class="fa fa-clone"></i>List Tugas</a></li>
-            <li><a href="<?php echo base_url().'hal_siswa/pengumpulan'?>"><i class="fa fa-file-plus"></i>Cek Tugas</a></li>
+            <li><a href="<?php echo base_url().'hal_guru/tugas'?>"><i class="fa fa-clone"></i>List Tugas</a></li>
+            <li><a href="<?php echo base_url().'hal_guru/pengumpulan'?>"><i class="fa fa-file-plus"></i>Cek Tugas</a></li>
           </ul>
         </li>
 
