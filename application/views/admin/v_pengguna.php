@@ -629,10 +629,9 @@
                                             <select class="form-control" name="xlevel" required>
 											<?php if($pengguna_level=='1'):?>
                                                 <option value="1" selected>Administrator</option>
-                                                <option value="2">Author</option>
+                                               
 											<?php else:?>
-												<option value="1">Administrator</option>
-                                                <option value="2" selected>Author</option>
+												
 											<?php endif;?>
                                             </select>
                                         </div>
@@ -781,12 +780,7 @@
                     bgColor: '#7EC857'
                 });
         </script>
-    <?php elseif($this->session->flashdata('msg')=='show-modal'):?>
-        <script type="text/javascript">
-                $('#ModalResetPassword').modal('show');
-        </script>
     <?php else:?>
-
     <?php endif;?>
 </body>
 </html>

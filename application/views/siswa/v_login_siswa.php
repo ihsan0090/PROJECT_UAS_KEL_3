@@ -26,8 +26,8 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg"> <img width="150px;" src="<?php echo base_url().'assets/images/logo-up.png'?>"></p><hr/>
-
-    <form action="<?php echo site_url().'siswa/login/auth'?>" method="post">
+    <p class="login-box-msg">LOGIN SISWA</p><hr/>
+    <form action="<?php echo site_url().'admin/masuk_siswa/auth'?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" name="nis" class="form-control" placeholder="Nis" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>

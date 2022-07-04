@@ -81,7 +81,7 @@
                   <?php if($c['pengguna_level']=='1'):?>
                     <small>Administrator</small>
                   <?php else:?>
-
+                    <small>Author</small>
                   <?php endif;?>
                 </p>
               </li>
@@ -90,7 +90,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-right">
-                  <a href="<?php echo base_url().'admin/login/logout'?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo base_url().'admin/masuk_siswa/logout'?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>

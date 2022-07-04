@@ -127,6 +127,11 @@ class Pengguna extends CI_Controller{
      						}elseif ($password <> $konfirm_password) {
      							echo $this->session->set_flashdata('msg','error');
 	               				redirect('admin/pengguna');
+							}elseif ($password && $konfirm_password) {
+								$this->m_pengguna->update_password_saja($kode,$password);
+								echo $this->session->set_flashdata('msg','info');
+								redirect('admin/pengguna');
+								
      						}else{
 	               				$this->m_pengguna->update_pengguna($kode,$nama,$jenkel,$username,$password,$email,$nohp,$level,$gambar);
 	                    		echo $this->session->set_flashdata('msg','info');
@@ -152,9 +157,13 @@ class Pengguna extends CI_Controller{
                        	$this->m_pengguna->update_pengguna_tanpa_pass_dan_gambar($kode,$nama,$jenkel,$username,$password,$email,$nohp,$level);
 	                    echo $this->session->set_flashdata('msg','info');
 	               		redirect('admin/pengguna');
-     				}elseif ($password <> $konfirm_password) {
-     					echo $this->session->set_flashdata('msg','error');
-	               		redirect('admin/pengguna');
+					}elseif ($password <> $konfirm_password) {
+						echo $this->session->set_flashdata('msg','error');
+						  redirect('admin/pengguna');
+				   }elseif ($password && $konfirm_password) {
+					   $this->m_pengguna->update_password_saja($kode,$password);
+					   echo $this->session->set_flashdata('msg','info');
+					   redirect('admin/pengguna');
      				}else{
 	               		$this->m_pengguna->update_pengguna_tanpa_gambar($kode,$nama,$jenkel,$username,$password,$email,$nohp,$level);
 	                    echo $this->session->set_flashdata('msg','warning');
