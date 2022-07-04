@@ -42,13 +42,14 @@ class Guru extends CI_Controller{
 
 	                        $photo=$gbr['file_name'];
 							$nip=strip_tags($this->input->post('xnip'));
+							$pass=strip_tags($this->input->post('xpass'));
 							$nama=strip_tags($this->input->post('xnama'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 							$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
 							$mapel=strip_tags($this->input->post('xmapel'));
 
-							$this->m_guru->simpan_guru($nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel,$photo);
+							$this->m_guru->simpan_guru($nip,$pass,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel,$photo);
 							echo $this->session->set_flashdata('msg','success');
 							redirect('admin/guru');
 					}else{
@@ -58,13 +59,14 @@ class Guru extends CI_Controller{
 	                 
 	            }else{
 	            	$nip=strip_tags($this->input->post('xnip'));
+					$pass=strip_tags($this->input->post('xpass'));
 					$nama=strip_tags($this->input->post('xnama'));
 					$jenkel=strip_tags($this->input->post('xjenkel'));
 					$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 					$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
 					$mapel=strip_tags($this->input->post('xmapel'));
 
-					$this->m_guru->simpan_guru_tanpa_img($nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel);
+					$this->m_guru->simpan_guru_tanpa_img($nip,$pass,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel);
 					echo $this->session->set_flashdata('msg','success');
 					redirect('admin/guru');
 				}
@@ -101,13 +103,14 @@ class Guru extends CI_Controller{
 	                        $photo=$gbr['file_name'];
 	                        $kode=$this->input->post('kode');
 							$nip=strip_tags($this->input->post('xnip'));
+							$pass=strip_tags($this->input->post('xpass'));
 							$nama=strip_tags($this->input->post('xnama'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 							$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
 							$mapel=strip_tags($this->input->post('xmapel'));
 
-							$this->m_guru->update_guru($kode,$nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel,$photo);
+							$this->m_guru->update_guru($kode,$nip,$pass,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel,$photo);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/guru');
 	                    
@@ -119,12 +122,13 @@ class Guru extends CI_Controller{
 	            }else{
 							$kode=$this->input->post('kode');
 							$nip=strip_tags($this->input->post('xnip'));
+							$pass=strip_tags($this->input->post('xpass'));
 							$nama=strip_tags($this->input->post('xnama'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 							$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
 							$mapel=strip_tags($this->input->post('xmapel'));
-							$this->m_guru->update_guru_tanpa_img($kode,$nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel);
+							$this->m_guru->update_guru_tanpa_img($kode,$nip,$pass,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/guru');
 	            } 

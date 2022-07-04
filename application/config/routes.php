@@ -53,6 +53,7 @@ $route['default_controller'] = 'home';
 $route['administrator']='admin/login';
 $route['masuk_siswa']='admin/masuk_siswa';
 $route['hal_siswa']='admin/hal_siswa';
+$route['materi']='hal_siswa/materi';
 $route['artikel']='blog';
 $route['artikel']='blog/index';
 $route['artikel/(:any)']='blog/detail/$1';

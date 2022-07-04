@@ -1,5 +1,5 @@
 <?php
-class Hal_siswa extends CI_Controller{
+class Materi extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		if($this->session->userdata('masuk') !=TRUE){
@@ -7,8 +7,12 @@ class Hal_siswa extends CI_Controller{
             redirect($url);
         };
 	}
+
+
 	function index(){
-			$this->load->view('siswa/v_dashboard_siswa');
-		}
 	
+		$this->load->view('siswa/v_files');
 	}
+
+	
+}
