@@ -64,33 +64,33 @@
                       <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="150px" height="70px" src="<?php echo base_url().'assets/images/logo-up.png'?>"></a>
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                           <ul class="navbar-nav">
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('guru');?>">Guru</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('siswa');?>">Siswa</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="<?php echo site_url('contact');?>">Contact</a>
-                              </li>
+                          <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('about');?>">Tentang sekolah</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('guru');?>">Guru</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('siswa');?>">Siswa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Kegiatan</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Hubungi kami</a>
+                                </li>
                         </ul>
                   </div>
                 </nav>

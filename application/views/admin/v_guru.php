@@ -91,14 +91,14 @@
             </span>
           </a>
         </li>
-        <li>
+        <!--li>
           <a href="<?php echo base_url().'admin/files'?>">
             <i class="fa fa-download"></i> <span>Download</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li-->
         <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>

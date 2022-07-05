@@ -68,7 +68,7 @@
                                     <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
+                                    <a class="nav-link" href="<?php echo site_url('about');?>">Tentang sekolah</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('guru');?>">Guru</a>
@@ -86,10 +86,10 @@
                                     <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
+                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Kegiatan</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Contact</a>
+                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Hubungi kami</a>
                                 </li>
                           </ul>
                     </div>
