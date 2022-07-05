@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Jun 2022 pada 15.31
+-- Waktu pembuatan: 05 Jul 2022 pada 17.31
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -45,7 +45,7 @@ CREATE TABLE `tbl_agenda` (
 --
 
 INSERT INTO `tbl_agenda` (`agenda_id`, `agenda_nama`, `agenda_tanggal`, `agenda_deskripsi`, `agenda_mulai`, `agenda_selesai`, `agenda_tempat`, `agenda_waktu`, `agenda_keterangan`, `agenda_author`) VALUES
-(2, 'Peluncuran Website Resmi M-Sekolah', '2017-01-22 06:26:33', 'Peluncuran website resmi  M-Sekolah, sebagai media informasi dan akademik online untuk pelayanan pendidikan yang lebih baik kepada siswa, orangtua, dan masyarakat pada umumnya semakin meningkat.', '2017-01-04', '2017-01-04', 'M-Sekolah', '07.30 - 12.00 WIB', '-', 'M Fikri Setiadi'),
+(2, 'Lipsum', '2017-01-22 06:26:33', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.\r\n\r\nSed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.\r\n\r\nProin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.\r\n\r\nDonec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.\r\n\r\nEtiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.', '2017-01-04', '2017-01-04', 'M-Sekolah', '07.30 - 12.00 WIB', '-', 'IHSAN'),
 (4, 'asdad', '2022-06-15 07:51:22', 'asdad', '2022-06-06', '2022-06-15', 'adasd', '13.00', 'aasda', 'IHSAN');
 
 -- --------------------------------------------------------
@@ -69,14 +69,13 @@ CREATE TABLE `tbl_album` (
 --
 
 INSERT INTO `tbl_album` (`album_id`, `album_nama`, `album_tanggal`, `album_pengguna_id`, `album_author`, `album_count`, `album_cover`) VALUES
-(5, 'Ekskul', '2021-07-03 09:01:06', 1, 'Tata', 7, 'e776b560ad980ab3b69f96cbb5d7374e.jpg'),
-(6, 'Sarana & Prasarana', '2021-07-03 09:01:45', 1, 'Tata', 8, '8f778d016c65996699cf2664335638bb.jpg'),
-(7, 'Kegiatan Guru & Orang Tua', '2021-07-03 09:02:13', 1, 'Tata', 5, 'a81a0eab872b26aa39fa5e873decd575.jpeg'),
-(8, 'Guru', '2021-07-03 09:02:57', 1, 'Tata', 2, '4523782c7a81faf562f65a90a7b21013.jpg'),
-(9, 'OSIS', '2021-07-03 09:03:43', 1, 'Tata', 9, '8c91dce9ae7666cd1fe1d208bdf2871e.jpeg'),
-(10, 'LDKS', '2021-07-03 09:03:58', 1, 'Tata', 5, '6b5be1cfb0ab1e4aec31fd6248232e1d.jpeg'),
-(11, 'giat baksos', '2022-06-15 07:35:41', 1, 'Tata', 2, '75c30a06d0bf09aa91cada5d7c2bd6ff.JPG'),
-(12, 'jualan', '2022-06-17 17:34:52', 7, 'RENI', 0, '72044e45c6f198e9ce21ed10fff5ddc9.png');
+(5, 'MEME 6', '2021-07-03 09:01:06', 5, 'IHSAN', 0, '758327a11a65af3c288e63c1c5442a99.jpg'),
+(6, 'MEME 5', '2021-07-03 09:01:45', 5, 'IHSAN', -2, '9db82489acbdbd2372b61f9636f0afd7.jpg'),
+(7, 'MEME 4', '2021-07-03 09:02:13', 5, 'IHSAN', 0, 'dde8da57cc30c18befc7b74a2a6eb5af.jpg'),
+(8, 'MEME 3', '2021-07-03 09:02:57', 5, 'IHSAN', 0, '957d91ea1d43b113f5a5063f18b97b1e.jpg'),
+(9, 'MEME 2', '2021-07-03 09:03:43', 5, 'IHSAN', 4, '44c4e53f263dabcec18f13482b6184e8.jpg'),
+(10, 'MEME 1', '2021-07-03 09:03:58', 5, 'IHSAN', 5, '491f28c44de050f1897c2f82bceec514.jpg'),
+(11, 'giat baksos', '2022-06-15 07:35:41', 1, 'Tata', 2, '75c30a06d0bf09aa91cada5d7c2bd6ff.JPG');
 
 -- --------------------------------------------------------
 
@@ -92,21 +91,6 @@ CREATE TABLE `tbl_files` (
   `file_oleh` varchar(60) DEFAULT NULL,
   `file_data` varchar(120) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbl_files`
---
-
-INSERT INTO `tbl_files` (`file_id`, `file_judul`, `file_deskripsi`, `file_tanggal`, `file_oleh`, `file_data`) VALUES
-(2, 'Dasar-dasar CSS', 'Modul dasar-dasar CSS 3. Modul ini membantu anda untuk memahami struktur dasar CSS', '2017-01-23 04:30:01', 'Drs. Joko', 'ab9a183ff240deadbedaff78e639af2f.pdf'),
-(3, '14 Teknik Komunikasi Yang Paling Efektif', 'Ebook 14 teknik komunikasi paling efektif membantu anda untuk berkomunikasi dengan baik dan benar', '2017-01-23 15:26:06', 'Drs. Joko', 'ab2cb34682bd94f30f2347523112ffb9.pdf'),
-(4, 'Bagaimana Membentuk Pola Pikir yang Baru', 'Ebook ini membantu anda membentuk pola pikir baru.', '2017-01-23 15:27:07', 'Drs. Joko', '30f588eb5c55324f8d18213f11651855.pdf'),
-(5, '7 Tips Penting mengatasi Kritik', '7 Tips Penting mengatasi Kritik', '2017-01-23 15:27:44', 'Drs. Joko', '329a62b25ad475a148e1546aa3db41de.docx'),
-(6, '8 Racun dalam kehidupan kita', '8 Racun dalam kehidupan kita', '2017-01-23 15:28:17', 'Drs. Joko', '8e38ad4948ba13758683dea443fbe6be.docx'),
-(7, 'Jurnal Teknolgi Informasi', 'Jurnal Teknolgi Informasi', '2017-01-25 03:18:53', 'Gunawan, S.Pd', '87ae0f009714ddfdd79e2977b2a64632.pdf'),
-(8, 'Jurnal Teknolgi Informasi 2', 'Jurnal Teknolgi Informasi', '2017-01-25 03:19:22', 'Gunawan, S.Pd', 'c4e966ba2c6e142155082854dc5b3602.pdf'),
-(9, 'Naskah Publikasi IT', 'Naskah Teknolgi Informasi', '2017-01-25 03:21:04', 'Gunawan, S.Pd', '71380b3cf16a17a02382098c028ece9c.pdf'),
-(10, 'Modul Teknologi Informasi', 'Modul Teknologi Informasi', '2017-01-25 03:22:08', 'Gunawan, S.Pd', '029143a3980232ab2900d94df36dbb0c.pdf');
 
 -- --------------------------------------------------------
 
@@ -129,42 +113,13 @@ CREATE TABLE `tbl_galeri` (
 --
 
 INSERT INTO `tbl_galeri` (`galeri_id`, `galeri_judul`, `galeri_tanggal`, `galeri_gambar`, `galeri_album_id`, `galeri_pengguna_id`, `galeri_author`) VALUES
-(19, 'Volly', '2021-07-03 09:04:29', '43cf0ea0958e519ff48ac166ae15f654.jpg', 5, 1, 'Tata'),
-(20, 'Bulu Tangkis', '2021-07-03 09:04:44', '8bb6c86e9211429b859d0d1e36fe6ff3.jpg', 5, 1, 'Tata'),
-(21, 'English Club', '2021-07-03 09:04:57', 'fb14a4fa84dcde29e6f3ab8e7a19347c.jpg', 5, 1, 'Tata'),
-(22, 'Futsal', '2021-07-03 09:05:08', '5c5349a6639f6f1430d297c4b73809da.jpg', 5, 1, 'Tata'),
-(23, 'Marawis', '2021-07-03 09:05:21', 'f68fe3819e381ff45f1f53d7a7af46b9.jpg', 5, 1, 'Tata'),
-(24, 'Pencak Silat', '2021-07-03 09:05:34', '78cb35580574de808985ada5b3dc8011.jpg', 5, 1, 'Tata'),
-(25, 'Pramuka', '2021-07-03 09:05:46', '2ac38843ee6f9f488f21b7c85c71161d.jpg', 5, 1, 'Tata'),
-(26, 'Gedung 1', '2021-07-03 09:06:08', 'da474c022a4a7e3e498051c3b12dcdb2.jpg', 6, 1, 'Tata'),
-(27, 'Gedung 2', '2021-07-03 09:06:19', 'bf6b075209995dbb536f80facd0b9b1e.jpg', 6, 1, 'Tata'),
-(28, 'Gedung 3', '2021-07-03 09:06:30', '7960684dbb68c66b114c8e784457a0ea.jpg', 6, 1, 'Tata'),
-(29, 'Lab. Komputer', '2021-07-03 09:06:48', '0bf6fc4ad0c3b463c568c25674c537cd.jpg', 6, 1, 'Tata'),
-(30, 'Perpustakaan', '2021-07-03 09:06:59', '3f368a5ba07ea3cc4b7ff4ce038b8952.jpg', 6, 1, 'Tata'),
-(31, 'Ruang Guru', '2021-07-03 09:07:12', '050f5f33380203539f15fa5c47d127da.jpg', 6, 1, 'Tata'),
-(32, 'Ruang Kelas 1', '2021-07-03 09:07:26', 'f55b768048bb3b04e22b5ba4864b1eb3.jpg', 6, 1, 'Tata'),
-(33, 'Ruang Kelas 2', '2021-07-03 09:07:36', 'b2427481c101e33e55dd5624d04f7bb5.jpg', 6, 1, 'Tata'),
-(34, 'Guru 1', '2021-07-03 09:08:01', '890e0b51d5e828287fb3f301e6e347c3.jpg', 8, 1, 'Tata'),
-(35, 'Guru 2', '2021-07-03 09:08:25', '27f28396ea78f5ff224194fb9eb82703.jpg', 8, 1, 'Tata'),
-(36, 'Kegiatan 1', '2021-07-03 09:08:43', '4bcbb711c035b90c309f2ce2da800b79.jpeg', 7, 1, 'Tata'),
-(37, 'Kegiatan 2', '2021-07-03 09:08:58', 'd1569da8f7533c7fd23fbf600ed97875.jpeg', 7, 1, 'Tata'),
-(38, 'Kegiatan 3', '2021-07-03 09:09:17', '8c1a101ef98c54e995ca3862e0c6214b.jpeg', 7, 1, 'Tata'),
-(39, 'Kegiatan 4', '2021-07-03 09:09:34', '36fceaa39c39d3e6334e9b7a73b4cf8b.jpeg', 7, 1, 'Tata'),
-(40, 'Kegiatan 5', '2021-07-03 09:09:48', '83dfff70187beb9e9a797d50cc49964b.jpeg', 7, 1, 'Tata'),
-(41, 'Osis 1', '2021-07-03 09:10:07', '3083ba967ecb72ca923df5f8f00bea47.jpeg', 9, 1, 'Tata'),
-(42, 'Osis 2', '2021-07-03 09:10:24', '2680a71699323269e44453eda972c71c.jpeg', 9, 1, 'Tata'),
-(43, 'Osis 3', '2021-07-03 09:10:35', 'a1b4d922caf5c8e9263ef484301c11a0.jpeg', 9, 1, 'Tata'),
-(44, 'Osis 4', '2021-07-03 09:10:45', 'd5ae017b08165bc0679d2d079a13e02b.jpeg', 9, 1, 'Tata'),
-(45, 'Osis 5', '2021-07-03 09:10:55', '8f8896490a2d94526643c21d049ee7dd.jpeg', 9, 1, 'Tata'),
-(46, 'Osis 6', '2021-07-03 09:11:05', 'fb90ba0d9710fff685cc424780125f59.jpeg', 9, 1, 'Tata'),
-(47, 'LDKS 1', '2021-07-03 09:11:20', 'edc0bd8c9ec68d00129ba8012b0d71ef.jpeg', 10, 1, 'Tata'),
-(48, 'LDKS 2', '2021-07-03 09:11:32', 'fd46cd9b7f718cb383b08f69bd9bb230.jpeg', 10, 1, 'Tata'),
-(49, 'LDKS 3', '2021-07-03 09:11:43', '50331c3c727d48ec8e372e49e5887aac.jpeg', 10, 1, 'Tata'),
-(50, 'LDKS 4', '2021-07-03 09:11:57', 'e4d22b82dfa7c98dc416df80f1f4a838.jpeg', 10, 1, 'Tata'),
-(51, 'LDKS 5', '2021-07-03 09:12:13', '2d6058a1b8618457d4a7ca49078ad124.jpeg', 10, 1, 'Tata'),
-(52, 'Osis 6', '2021-07-03 09:38:29', '16d489fb1ecbdc0651e147102a994f31.jpg', 9, 1, 'Tata'),
-(53, 'Osis 7', '2021-07-03 09:38:46', '160a90b5b46689e8412cd1c6b9cd729f.jpg', 9, 1, 'Tata'),
-(55, 'Osis 9', '2021-07-03 09:39:17', '9aabb8c19da3e243b818fe6314236e9f.jpg', 9, 1, 'Tata'),
+(48, 'LDKS 2', '2021-07-03 09:11:32', 'ca1cf5b5b483f14170e7e06a2977b4ee.jpg', 7, 5, 'IHSAN'),
+(49, 'Lipsum 3', '2021-07-03 09:11:43', '3c87d9e2dad2c1fc2076bebe15cf7e6f.jpg', 9, 5, 'IHSAN'),
+(50, 'Lipsum 3', '2021-07-03 09:11:57', '74f8a8ad9b3609b71ab61201160d498d.jpg', 10, 5, 'IHSAN'),
+(51, 'Lipsum 2', '2021-07-03 09:12:13', 'b2fb786fc2e7619c3002312ceb5ceecf.jpg', 10, 5, 'IHSAN'),
+(52, 'Lipsum 2', '2021-07-03 09:38:29', 'bbf37fc112babb28479eb726a915b5b5.jpg', 9, 5, 'IHSAN'),
+(53, 'Lipsum', '2021-07-03 09:38:46', '9c06d9a060a7b06621cc4290a68bd4b6.jpg', 9, 5, 'IHSAN'),
+(55, 'Lipsum', '2021-07-03 09:39:17', '641e2825165a71ae459db9a195178420.jpg', 9, 5, 'IHSAN'),
 (57, 'baksos 1', '2022-06-15 07:37:22', '39989313feaa7212afd0a1bede0f346d.jpg', 11, 1, 'Tata'),
 (58, 'baksos 2', '2022-06-15 07:37:56', '3ec8db7a0fd47d8b94fc906c7bca63ce.jpg', 11, 1, 'Tata');
 
@@ -177,6 +132,7 @@ INSERT INTO `tbl_galeri` (`galeri_id`, `galeri_judul`, `galeri_tanggal`, `galeri
 CREATE TABLE `tbl_guru` (
   `guru_id` int(11) NOT NULL,
   `guru_nip` varchar(30) DEFAULT NULL,
+  `guru_password` varchar(15) DEFAULT NULL,
   `guru_nama` varchar(70) DEFAULT NULL,
   `guru_jenkel` varchar(2) DEFAULT NULL,
   `guru_tmp_lahir` varchar(80) DEFAULT NULL,
@@ -190,8 +146,9 @@ CREATE TABLE `tbl_guru` (
 -- Dumping data untuk tabel `tbl_guru`
 --
 
-INSERT INTO `tbl_guru` (`guru_id`, `guru_nip`, `guru_nama`, `guru_jenkel`, `guru_tmp_lahir`, `guru_tgl_lahir`, `guru_photo`, `guru_tgl_input`, `guru_mapel`) VALUES
-(9, '21551216', 'wkwkw', 'L', 'jakaarta', '25 juni 1990', '75f62e8bc34955c649eb2ed8f93d618c.jpg', '2022-06-15 07:39:54', 'MTK');
+INSERT INTO `tbl_guru` (`guru_id`, `guru_nip`, `guru_password`, `guru_nama`, `guru_jenkel`, `guru_tmp_lahir`, `guru_tgl_lahir`, `guru_photo`, `guru_tgl_input`, `guru_mapel`) VALUES
+(9, '21551216', '21551216', '2155121622', 'P', 'medan', '20 agustus 1980', '75f62e8bc34955c649eb2ed8f93d618c.jpg', '2022-06-15 07:39:54', 'jakaarta'),
+(13, '222333', 'wsdasdad', 'RENI', 'P', 'surabaya', '25 juni 1980', '322cf638768ed1623b323aefa286099b.png', '2022-07-04 09:27:01', 'PLKJ');
 
 -- --------------------------------------------------------
 
@@ -216,7 +173,8 @@ CREATE TABLE `tbl_inbox` (
 INSERT INTO `tbl_inbox` (`inbox_id`, `inbox_nama`, `inbox_email`, `inbox_kontak`, `inbox_pesan`, `inbox_tanggal`, `inbox_status`) VALUES
 (9, 'ADASD', 'ADAD@SDADAD', '2323123', 'WRDFSDFSF', '2022-06-15 07:40:56', 0),
 (10, 'ASDAD', 'RERER@DDFD', 'SADSDA', 'WEADAD', '2022-06-15 07:41:27', 0),
-(11, 'IHSAN NUR RAHMAN', 'haaseeggaw4@gmail.com', '089698130294', 'fsdfs', '2022-06-17 18:00:20', 0);
+(11, 'IHSAN NUR RAHMAN', 'haaseeggaw4@gmail.com', '089698130294', 'fsdfs', '2022-06-17 18:00:20', 0),
+(12, 'asd', 'sad@sd', '23232423', 'asdadasd', '2022-06-26 10:33:13', 0);
 
 -- --------------------------------------------------------
 
@@ -239,7 +197,8 @@ INSERT INTO `tbl_kategori` (`kategori_id`, `kategori_nama`, `kategori_tanggal`) 
 (2, 'Politik', '2016-09-06 05:50:01'),
 (5, 'Penelitian', '2016-09-06 06:19:26'),
 (6, 'Prestasi', '2016-09-07 02:51:09'),
-(13, 'Olah Raga', '2017-01-13 13:20:31');
+(13, 'Olah Raga', '2017-01-13 13:20:31'),
+(14, 'Hiburan', '2022-07-05 05:55:09');
 
 -- --------------------------------------------------------
 
@@ -296,6 +255,14 @@ CREATE TABLE `tbl_komentar` (
   `komentar_parent` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `tbl_komentar`
+--
+
+INSERT INTO `tbl_komentar` (`komentar_id`, `komentar_nama`, `komentar_email`, `komentar_isi`, `komentar_tanggal`, `komentar_status`, `komentar_tulisan_id`, `komentar_parent`) VALUES
+(6, 'iashjj', 'adkas@fas', ' sdadw', '2022-06-27 03:52:08', '1', 27, 0),
+(7, 'wakwak', '', 'ewew', '2022-06-27 03:57:05', '1', 27, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -337,8 +304,8 @@ CREATE TABLE `tbl_pengguna` (
 --
 
 INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_email`, `pengguna_nohp`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
-(5, 'IHSAN', 'L', 'loking9090', '10ab53307e7cfe54f7494cbf56e7b9d7', 'ihsannurrahman1241@gmail.com', '087715642215', 1, '1', '2022-06-15 07:47:43', '7f8f5d202a569577c196ff99b4d83c2e.jpg'),
-(6, 'YANTI', 'P', 'yanti222', '21254f704091d62ac7b4d36c510966f3', 'yantisuryani@gmail.com', '085611254463', 1, '1', '2022-06-15 07:48:53', '2f56db00bbbd344b423b58fa098b0219.jpg');
+(5, 'IHSAN', 'L', 'loking9090', 'loking9090', 'ihsannurrahman1241@gmail.com', '087715642215', 1, '1', '2022-06-15 07:47:43', '1b308099d129a60a930ceb2085bb710f.png'),
+(6, 'YANTI', 'P', 'yanti222', 'emas168', 'yantisuryani@gmail.com', '085611254463', 1, '1', '2022-06-15 07:48:53', '2f56db00bbbd344b423b58fa098b0219.jpg');
 
 -- --------------------------------------------------------
 
@@ -359,10 +326,11 @@ CREATE TABLE `tbl_pengumuman` (
 --
 
 INSERT INTO `tbl_pengumuman` (`pengumuman_id`, `pengumuman_judul`, `pengumuman_deskripsi`, `pengumuman_tanggal`, `pengumuman_author`) VALUES
-(1, 'Pengumuman Libur Semester Ganjil Tahun Ajaran 2016-2017', 'Libur semester ganjil tahun ajaran 2016-2017 dimulai dari tanggal 3 Maret 2017 sampai dengan tanggal 7 Maret 207.', '2017-01-21 01:17:30', 'Tata'),
-(2, 'Pengumuman Pembagian Raport Semester Ganjil Tahun Ajaran 2016-2017', 'Menjelang berakhirnya proses belajar-mengajar di semester ganjil tahun ajaran 2016-2017, maka akan diadakan pembagian hasil belajar/raport pada tanggal 4 Maret 2017 pukul 07.30 WIB.\r\nYang bertempat di M-Sekolah. Raport diambil oleh orang tua/wali kelas murid masing-masing', '2017-01-21 01:16:20', 'Tata'),
-(3, 'Pengumuman Peresmian dan Launching Website Perdana M-Sekolah', 'Peresmian dan launching website resmi M-Sekolah akan diadakan pada hari 23 Desember 2016 pukul 10.00, bertepatan dengan pembagian raport semester ganjil tahun ajaran 2016-2017', '2017-01-22 07:16:16', 'Tata'),
-(6, 'Baru Hari Pertama Operasi Patuh Jaya, 2 Ribu Orang Kena Tilang', 'asdasdasdasda', '2022-06-17 17:30:31', 'RENI');
+(1, 'Lipsum 3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.\r\n\r\nSed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.\r\n\r\nProin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.\r\n\r\nDonec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.\r\n\r\nEtiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.', '2017-01-21 01:17:30', 'IHSAN'),
+(2, 'Lipsum 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.\r\n\r\nSed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.\r\n\r\nProin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.\r\n\r\nDonec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.\r\n\r\nEtiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.', '2017-01-21 01:16:20', 'IHSAN'),
+(3, 'Lipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.\r\n\r\nSed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.\r\n\r\nProin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.\r\n\r\nDonec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.\r\n\r\nEtiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.', '2017-01-22 07:16:16', 'IHSAN'),
+(6, 'Baru Hari Pertama Operasi Patuh Jaya, 2 Ribu Orang Kena Tilang', 'asdasdasdasda', '2022-06-17 17:30:31', 'RENI'),
+(7, 'Lipsum 3', '87878', '2022-07-05 05:56:05', 'IHSAN');
 
 -- --------------------------------------------------------
 
@@ -454,7 +422,13 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (999, '2022-06-17 14:21:15', '::1', 'Chrome'),
 (1000, '2022-06-17 17:30:05', '::1', 'Chrome'),
 (1001, '2022-06-20 02:17:53', '::1', 'Chrome'),
-(1002, '2022-06-21 03:02:13', '::1', 'Chrome');
+(1002, '2022-06-21 03:02:13', '::1', 'Chrome'),
+(1003, '2022-06-26 08:53:49', '::1', 'Chrome'),
+(1004, '2022-06-27 03:51:53', '::1', 'Chrome'),
+(1005, '2022-06-28 06:29:56', '::1', 'Chrome'),
+(1006, '2022-07-03 11:55:58', '::1', 'Chrome'),
+(1007, '2022-07-03 19:00:13', '::1', 'Chrome'),
+(1008, '2022-07-05 05:36:29', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -465,6 +439,7 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 CREATE TABLE `tbl_siswa` (
   `siswa_id` int(11) NOT NULL,
   `siswa_nis` varchar(20) DEFAULT NULL,
+  `siswa_password` varchar(15) DEFAULT NULL,
   `siswa_nama` varchar(70) DEFAULT NULL,
   `siswa_jenkel` varchar(2) DEFAULT NULL,
   `siswa_kelas_id` int(11) DEFAULT NULL,
@@ -475,17 +450,8 @@ CREATE TABLE `tbl_siswa` (
 -- Dumping data untuk tabel `tbl_siswa`
 --
 
-INSERT INTO `tbl_siswa` (`siswa_id`, `siswa_nis`, `siswa_nama`, `siswa_jenkel`, `siswa_kelas_id`, `siswa_photo`) VALUES
-(4, '123083', 'Ari Hidayat', 'L', 1, 'e371e67618ad53c99de380782c373023.png'),
-(5, '123084', 'Irma Chaiyo', 'P', 1, 'cd78b29c36d29fabe1145fe079c7be08.jpg'),
-(6, '123085', 'Nadila Ginting', 'P', 1, 'b52e315b841f3fc856b028978a95569d.jpg'),
-(7, '123086', 'Anna Marina', 'P', 1, 'd6b0e4106766ca2e43e2a17a13b33d53.jpg'),
-(8, '123086', 'Dhea Lubis', 'P', 1, '4e07c99a90add1ddf8ff1c12a1aad56c.jpg'),
-(9, '123087', 'Nadia Ginting', 'P', 1, 'a371de5193e5c5cdd849ff4d3b7d9bde.jpeg'),
-(10, '123088', 'Mita Febrina', 'P', 1, '9ed91c9d293f9ca132c52ea6c8ab048c.jpg'),
-(11, '123089', 'Elizabeth ', 'P', 1, '31417b62047a7485e71af6832581ce34.jpg'),
-(12, '123090', 'Della Guswono', 'P', 1, '6c82fce13bb3eff1fd2e897b2c3cfeeb.png'),
-(13, '55188454', 'WAAS', 'L', 7, '10a2c3e67d37bd23e272462ff573c784.png');
+INSERT INTO `tbl_siswa` (`siswa_id`, `siswa_nis`, `siswa_password`, `siswa_nama`, `siswa_jenkel`, `siswa_kelas_id`, `siswa_photo`) VALUES
+(22, '5518845422', '5518845422', 'wkwkw', 'L', 4, NULL);
 
 -- --------------------------------------------------------
 
@@ -513,9 +479,10 @@ CREATE TABLE `tbl_tulisan` (
 --
 
 INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisan_tanggal`, `tulisan_kategori_id`, `tulisan_kategori_nama`, `tulisan_views`, `tulisan_gambar`, `tulisan_pengguna_id`, `tulisan_author`, `tulisan_img_slider`, `tulisan_slug`) VALUES
-(20, 'Persiapan siswa menjelang ujian nasional', '<p>Banyak metode bejalar yang dilakukan oleh siswa untuk persiapan menghadapi ujian nasional (UN). Biantaranya mengingat dengan metode Mind Map, ataupun bejalar diluar kelas (outdoor).&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:24:42', 1, 'Pendidikan', 29, '0a927c6d34dc5560b72f053313f14638.jpg', 1, 'Tata', 0, 'persiapan-siswa-menjelang-ujian-nasional'),
-(22, 'Prestasi membangga dari siswa MSchool', '<p>Prestasi dan penghargaan merupakan trigger (pemicu) semangat belajar siswa. Ada banyak prestasi yang telah diraih oleh siswa m-sekolah. Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:38:21', 6, 'Prestasi', 1, 'a59aa487ab2e3b57b2fcf75063b67575.jpg', 1, 'Tata', 0, 'prestasi-membangga-dari-siswa-mschool'),
-(23, 'Pelaksanaan Ujian Nasional MSchool', '<p>Pelaksanaan UN (Ujian Nasional) di sekolah M-Sekolah berlangsung tentram dan damai. Terlihat ketenangan terpancar diwajah siswa berprestasi.&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel&nbsp; Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-05-17 09:41:30', 1, 'Pendidikan', 5, '12bfb1953df800c59835a2796f8c6619.jpg', 1, 'Tata', 0, 'pelaksanaan-ujian-nasional-mschool');
+(20, 'Lipsum 3', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.</p>\r\n\r\n<p>Sed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.</p>\r\n\r\n<p>Proin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.</p>\r\n\r\n<p>Donec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.</p>\r\n\r\n<p>Etiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.</p>\r\n', '2017-05-17 09:24:42', 1, 'Pendidikan', 29, '0a927c6d34dc5560b72f053313f14638.jpg', 5, 'IHSAN', 0, 'lipsum-3'),
+(22, 'Lipsum 2', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.</p>\r\n\r\n<p>Sed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.</p>\r\n\r\n<p>Proin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.</p>\r\n\r\n<p>Donec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.</p>\r\n\r\n<p>Etiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.</p>\r\n', '2017-05-17 09:38:21', 6, 'Prestasi', 3, 'a59aa487ab2e3b57b2fcf75063b67575.jpg', 5, 'IHSAN', 0, 'lipsum-2'),
+(23, 'Lipsum', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nunc, pretium a enim blandit, blandit lacinia ligula. Suspendisse lacinia tincidunt mi sed sagittis. Aenean a tempor quam. Praesent ac dapibus quam. Nunc ac velit sed elit maximus ullamcorper eget a enim. Donec in leo in tellus pretium faucibus. Praesent et lectus in urna mollis sagittis. Vestibulum et velit vitae sem sagittis posuere eu ac nibh. Integer rhoncus vel massa cursus dignissim.</p>\r\n\r\n<p>Sed blandit semper felis, non mollis velit mollis non. Fusce tristique sed purus et accumsan. Fusce vulputate diam ut felis lobortis, vitae interdum tellus placerat. Phasellus tempus est eu consequat iaculis. Nunc placerat ultrices ipsum eget commodo. In tristique at ligula in condimentum. Ut at enim odio. Phasellus a scelerisque libero. Fusce justo sem, ultrices et luctus sit amet, interdum sit amet massa. Sed risus mi, tristique sed nisi sed, laoreet placerat lectus. Duis gravida dui ligula, quis placerat tellus luctus sed. Quisque quam purus, efficitur ac porta non, dignissim id diam. Phasellus eleifend velit ac augue semper laoreet. Vestibulum rhoncus, urna at sagittis semper, neque odio pulvinar nunc, quis dapibus mauris elit sed arcu. Proin at nibh malesuada, dignissim velit ac, tincidunt tellus. Duis condimentum euismod tellus, vitae sagittis leo suscipit vitae.</p>\r\n\r\n<p>Proin lobortis volutpat porttitor. Maecenas at porta augue. Duis eget ornare nibh, sit amet mattis augue. Sed ultrices fermentum urna eu consectetur. In aliquam quam non metus vestibulum blandit eget non diam. Curabitur non orci nec ligula eleifend vehicula eu vel purus. Duis iaculis mauris orci, ut ornare sem finibus eget. Integer nec dignissim justo. Cras rhoncus tellus id euismod suscipit. Donec elementum euismod faucibus. Suspendisse vehicula lorem purus, id placerat sem efficitur at. Nullam eget diam ut odio varius tincidunt. Quisque imperdiet elit nec blandit pretium. Nulla ac lacinia elit, nec posuere metus. Maecenas et facilisis sem, a maximus nisl.</p>\r\n\r\n<p>Donec tellus nibh, dapibus in porttitor nec, facilisis ac lectus. Aliquam semper consequat nulla. Duis placerat neque nec neque molestie, ac aliquam est mollis. Nunc imperdiet, nibh at scelerisque fringilla, tortor velit euismod neque, non efficitur erat augue quis lectus. In hac habitasse platea dictumst. Cras faucibus magna et velit suscipit pharetra. Nunc at euismod libero, vel posuere mi. Duis in felis in nunc dictum pulvinar.</p>\r\n\r\n<p>Etiam vitae lectus nisi. Quisque eget tellus ut velit mattis egestas vitae non diam. Nunc quis tristique justo. Nam a pellentesque sapien. Maecenas iaculis at mauris placerat sodales. Aliquam porttitor sapien nisl, non vulputate ex consequat non. Duis id ante sed massa elementum ullamcorper.</p>\r\n', '2017-05-17 09:41:30', 1, 'Pendidikan', 18, '12bfb1953df800c59835a2796f8c6619.jpg', 5, 'IHSAN', 0, 'lipsum'),
+(27, 'Lipsum 4', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta ullamcorper nibh in porttitor. Duis eros elit, elementum vel commodo eget, laoreet a erat. Cras laoreet consectetur lacinia. Nunc scelerisque ex et mi fermentum varius. Integer rutrum nisl ante, quis feugiat sem tempus vel. Suspendisse at euismod orci. Ut eget nisi nulla. Pellentesque consectetur vulputate vulputate. Pellentesque egestas lectus quis rhoncus accumsan. In hac habitasse platea dictumst. Fusce lacus massa, suscipit eget lorem ac, consequat lacinia tellus. Nam vitae magna ac turpis convallis imperdiet vel vel nunc. Maecenas vitae ultrices massa, et blandit enim. Phasellus tincidunt viverra elit, et placerat nisl aliquam in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>\r\n\r\n<p>Sed vitae diam ultrices, consequat urna vel, luctus arcu. Sed vel blandit nunc, nec vehicula nisl. Sed rhoncus augue sed arcu facilisis pellentesque. Nullam ac velit eget metus interdum sollicitudin. Mauris eget maximus nunc. Nullam finibus facilisis dictum. Nulla facilisi. Morbi vehicula libero sit amet commodo laoreet. In rutrum sem libero, et malesuada nisl fermentum ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor libero eu pharetra iaculis. Donec luctus pretium urna. Etiam id neque tempus, imperdiet augue sit amet, blandit tortor. Vivamus in faucibus lectus.</p>\r\n\r\n<p>Donec lacinia sem lacus, et laoreet augue volutpat in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In id est nec augue dapibus posuere. Integer nec ultrices turpis. Quisque quis turpis nunc. Suspendisse nec lobortis nisl. Sed vestibulum ultricies mauris, at bibendum mauris. Maecenas ut lacinia diam. Nunc at semper odio, et accumsan sapien. Cras ultricies ex eu ex gravida condimentum. Praesent facilisis urna sit amet dictum porta. Suspendisse potenti. Cras tempus lorem ut felis aliquet faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat id nisl fermentum dictum.</p>\r\n\r\n<p>Fusce non varius odio. Ut sed accumsan erat. In iaculis, ante ac rhoncus interdum, massa enim porttitor orci, ut tincidunt enim nisl a magna. Integer aliquam augue sed eleifend bibendum. Etiam volutpat feugiat ipsum, at lacinia massa rhoncus quis. Pellentesque mattis augue felis, vel ullamcorper arcu imperdiet sit amet. Nam tristique hendrerit lectus placerat hendrerit. Nulla lobortis velit dolor, quis interdum arcu porta ac. Praesent dignissim nulla ut arcu efficitur lacinia. Fusce pharetra risus id magna gravida viverra. Nunc auctor viverra fringilla.</p>\r\n\r\n<p>Nunc sodales purus lectus, vitae ultricies risus faucibus non. Nunc eu tristique purus. Integer rhoncus neque sit amet lorem posuere ultrices. Nulla mattis pretium congue. Vestibulum lacinia eros nec sapien vestibulum mollis. Morbi suscipit, justo eget ornare varius, ipsum nunc facilisis massa, vehicula condimentum dolor velit nec mi. Aliquam in justo in nulla lacinia tristique. Fusce semper mollis risus, a feugiat mi tristique molestie. Nunc iaculis elementum magna fermentum tempor.</p>\r\n', '2022-06-26 14:03:44', 1, 'Pendidikan', 7, '2ddbc85d94cbe128518557ebc8d4bb45.png', 5, 'IHSAN', 0, 'lipsum-4');
 
 --
 -- Indexes for dumped tables
@@ -650,19 +617,19 @@ ALTER TABLE `tbl_galeri`
 -- AUTO_INCREMENT untuk tabel `tbl_guru`
 --
 ALTER TABLE `tbl_guru`
-  MODIFY `guru_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `guru_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_inbox`
 --
 ALTER TABLE `tbl_inbox`
-  MODIFY `inbox_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `inbox_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
-  MODIFY `kategori_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `kategori_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_kelas`
@@ -674,7 +641,7 @@ ALTER TABLE `tbl_kelas`
 -- AUTO_INCREMENT untuk tabel `tbl_komentar`
 --
 ALTER TABLE `tbl_komentar`
-  MODIFY `komentar_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `komentar_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_log_aktivitas`
@@ -686,31 +653,31 @@ ALTER TABLE `tbl_log_aktivitas`
 -- AUTO_INCREMENT untuk tabel `tbl_pengguna`
 --
 ALTER TABLE `tbl_pengguna`
-  MODIFY `pengguna_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `pengguna_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_pengumuman`
 --
 ALTER TABLE `tbl_pengumuman`
-  MODIFY `pengumuman_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `pengumuman_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_pengunjung`
 --
 ALTER TABLE `tbl_pengunjung`
-  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1003;
+  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1009;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_siswa`
 --
 ALTER TABLE `tbl_siswa`
-  MODIFY `siswa_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `siswa_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_tulisan`
 --
 ALTER TABLE `tbl_tulisan`
-  MODIFY `tulisan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `tulisan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
