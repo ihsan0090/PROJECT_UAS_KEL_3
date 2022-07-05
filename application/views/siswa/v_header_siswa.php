@@ -31,7 +31,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!--img src="<!--?php echo base_url().'assets/images/'.$c['pengguna_photo'];?>" class="user-image" alt="">
-              <span class="hidden-xs"><?php echo $c['pengguna_nama'];?></span>
+              <span class="hidden-xs"><!--?php echo $c['pengguna_nama'];?></span>
             </a-->
             <ul class="dropdown-menu">
               <!-- User image -->
