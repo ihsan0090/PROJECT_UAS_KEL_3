@@ -23,20 +23,20 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
 
-          <?php
+          <!--?php
               $id_admin=$this->session->userdata('idadmin');
               $q=$this->db->query("SELECT * FROM tbl_pengguna WHERE pengguna_id='$id_admin'");
               $c=$q->row_array();
-          ?>
+          ?-->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url().'assets/images/'.$c['pengguna_photo'];?>" class="user-image" alt="">
+              <!--img src="<!--?php echo base_url().'assets/images/'.$c['pengguna_photo'];?>" class="user-image" alt="">
               <span class="hidden-xs"><?php echo $c['pengguna_nama'];?></span>
-            </a>
+            </a-->
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo base_url().'assets/images/'.$c['pengguna_photo'];?>" class="img-circle" alt="">
+                <!--img src="<!--?php echo base_url().'assets/images/'.$c['pengguna_photo'];?>" class="img-circle" alt=""-->
 
                 <p>
                     <small>Siswa</small>

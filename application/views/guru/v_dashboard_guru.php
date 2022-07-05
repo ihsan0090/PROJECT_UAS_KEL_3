@@ -43,7 +43,7 @@
 
   <!--Header-->
   <?php
-    $this->load->view('siswa/v_header_siswa');
+    $this->load->view('guru/v_header_guru');
   ?>
 
   <!-- Left side column. contains the logo and sidebar -->

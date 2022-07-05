@@ -24,7 +24,7 @@
         <ul class="nav navbar-nav">
 
                 <p>
-                    <small>Siswa</small>
+                    <small>guru</small>
                 </p>
               </li>
               <!-- Menu Body -->
